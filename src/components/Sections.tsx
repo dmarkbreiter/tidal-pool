@@ -15,12 +15,12 @@ export default function Sections() {
   const categories = [...new Set(t.map((taxon: any) => taxon.category))];
   return (
     <div className='flex flex-col gap-10 w-full'>
-      {categories.map((category: string) => {
+      {categories.map((category: string, i: number) => {
         const taxaInCategory = taxa.filter((taxon: any) => taxon.category === category);
         return (
-          <Section title={category}>
-            {taxaInCategory.map((taxon: any) => (
-              <Card key={taxon.id} title={taxon.species} subtitle={taxon.common_name} photos={taxon.photos} />
+          <Section title={category} key={i}>
+            {taxaInCategory.map((taxon: any, i: number) => (
+              <Card key={taxon.id} title={taxon.species} subtitle={taxon.common_name} photos={taxon.photos}/>
             ))}
           </Section>
         );
