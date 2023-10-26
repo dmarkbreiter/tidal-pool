@@ -4,11 +4,11 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
+} from "./Accordion";
 
 interface SectionProps {
   children: React.ReactNode;
-  title?: string;
+  title: string;
 }
 
 export default function Section({ children, title }: SectionProps) {
