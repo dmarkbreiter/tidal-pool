@@ -11,7 +11,7 @@ interface CardProps {
 
 export default function Card({ title, subtitle, photos }: CardProps) {
   return (
-    <div className="shadow bg-white dark:bg-gray-800 w-full xs:w-fit rounded-xl flex flex-col sm:w-[calc(50vw-37px)] lg:w-[calc(33vw-30px)] xl:w-[calc(25vw-30px)] 2xl:w-96">
+    <div className="shadow bg-white dark:bg-gray-800 w-full rounded-xl flex flex-col sm:w-[calc(50vw-37px)] lg:w-[calc(33vw-30px)] xl:w-[calc(25vw-30px)] 2xl:w-96">
       <div className="w-full max-h-80 md:h-96 ">
         <Slider photos={photos} />
       </div>

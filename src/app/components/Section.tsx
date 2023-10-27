@@ -13,7 +13,7 @@ interface SectionProps {
 
 export default function Section({ children, title }: SectionProps) {
   return (
-    <Accordion type="single" collapsible className="w-full">
+    <Accordion collapsible className="w-full">
       <AccordionItem value={title}>
         <AccordionTrigger>
          {title && <H2>{title}</H2>}
