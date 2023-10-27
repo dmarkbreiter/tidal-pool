@@ -1,7 +1,4 @@
-import Image from 'next/image'
-import Card from 'components/Card'
-import Section from 'components/Section'
-import Sections from 'components/Sections'
+import Sections from './components/Sections'
 
 export default function Home() {
   return (

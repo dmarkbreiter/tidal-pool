@@ -1,4 +1,4 @@
-import { taxa } from '../taxa.js'
+import { taxa } from '../../taxa'
 import Section from './Section';
 import Card from './Card';
 
